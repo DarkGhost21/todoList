@@ -39,7 +39,7 @@ def login():
 
         error = None
         #Validar datos
-        user = User.query.filter_by(username = username).first
+        user = User.query.filter_by(username = username).first()
         if user == None:
             error = 'Nombre de usuario incorrecto'
         elif not check_password_hash(user.password, password):
