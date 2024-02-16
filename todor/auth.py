@@ -43,7 +43,7 @@ def login():
         if user == None:
             error = 'Nombre de usuario incorrecto'
         elif not check_password_hash(user.password, password):
-            error = 'Contraseña incorrecta'
+            error = 'Contraseña incorrecta.'
 
         #Iniciar sesion
         if error is None:
