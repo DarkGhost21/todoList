@@ -25,7 +25,7 @@ def register():
             db.session.commit()
             return redirect(url_for('auth.login'))
         else:
-            error = f'El usuario {username} ya esta registrado'
+            error = f'El usuario {username} ya esta registrado.'
 
         flash(error)
 
